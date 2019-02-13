@@ -1,0 +1,57 @@
+{
+  "name": "mbio-codechallenge",
+  "version": "0.0.1",
+  "description": "Create a Memes App in Vanillajs and scss",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server --config webpack.config.js --port 3001 --hot --inline --mode=development",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "./node_modules/.bin/webpack --config webpack.config.js",
+    "pre-commit": "./node_modules/.bin/stylelint 'src/assets/styles/**/*.scss' && ./node_modules/.bin/prettier --check 'src/**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/"
+  },
+  "keywords": [
+    "es6",
+    "scss"
+  ],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "author": "Pascal Brewing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com//issues"
+  },
+  "homepage": "https://",
+  "devDependencies": {
+    "autoprefixer": "^9.4.7",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-es2015": "^6.24.1",
+    "commit-msg": "^0.2.3",
+    "css-loader": "^2.1.0",
+    "es6-promise": "^4.2.5",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "husky": "^1.3.1",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "prettier": "1.16.4",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "stylelint": "^9.10.1",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-selector-bem-pattern": "^2.0.0",
+    "stylelint-webpack-plugin": "^0.10.5",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "rxjs": "^6.4.0"
+  }
+}

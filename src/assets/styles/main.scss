@@ -1,0 +1,15 @@
+@import 'vars';
+@import 'mixins';
+
+/** postcss-bem-linter: define body; */
+body {
+  background-color: #000;
+
+  @include media-breakpoint-down(md) {
+    background-color: red;
+  }
+
+  @include media-breakpoint-down(sm) {
+    background-color: blue;
+  }
+}
