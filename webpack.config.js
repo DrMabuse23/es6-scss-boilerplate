@@ -24,7 +24,7 @@ module.exports = {
       context: '',
       files: '**/*.scss',
       syntax: 'scss',
-      failOnError: false,
+      failOnError: true,
       quiet: false
     })
   ],
